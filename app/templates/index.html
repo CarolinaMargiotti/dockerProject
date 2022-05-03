@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projeto Docker</title>
+	</head>
+	<body>
+		<h1>Projeto Docker</h1>
+
+		<h3>Valor para salvar</h3>
+		<form action="/save" method="post">
+			<fieldset>
+				<label for="id">ID</label>
+				<input type="text" name="id" required /> 
+				<label for="valor">Valor</label>
+				<input type="text" name="valor" required />
+				<button type ="submit">Submit</button>
+			</fieldset>
+		</form>
+
+		<h4>Valor para resgatar</h4>
+		<form action="/get" method="get">
+		<fieldset>
+			<label for="id">ID</label>
+			<input type="text" name="id" required /> 
+			<button type ="submit">Submit</button>
+		</fieldset>
+
+		</form>
+	</body>
+</html>
